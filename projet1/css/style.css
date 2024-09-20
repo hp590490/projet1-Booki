@@ -27,17 +27,16 @@ body {
 .top-main {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
 }
 .left-part-header img {
   height: 15px;
   padding-top: 20px;
 }
-.right-part-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: start;
-  width: 200px;
+.space {
+  width: 40px;
+  height: auto;
+  display: inline-block;
 }
 .right-part-header button {
   margin-top: 4px;
@@ -58,7 +57,7 @@ body {
   background: #0065fc;
   transform: translateX(1%) translateY(-870%);
 }
-.right-part-header button:nth-child(2):hover:before {
+.right-part-header button:nth-child(3):hover:before {
   content: "";
   width: 49px;
   height: 1.5px;
@@ -66,6 +65,21 @@ body {
   background: #0065fc;
   transform: translateX(1%) translateY(-870%);
 }
+.headline p {
+  margin-top: 5px;
+}
+.info-group {
+  padding-bottom: 20px;
+}
+.search-bar {
+  border: 1px;
+  border-radius: 15px;
+  border-color: #858585;
+  background-color: #110f0f;
+  width: 377px;
+  height: 49px;
+}
+
 a {
   color: inherit;
   text-decoration: none;
