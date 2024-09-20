@@ -112,6 +112,9 @@ body {
   font-weight: bold;
   color: black;
 }
+.input-city:focus::placeholder {
+  color: transparent;
+}
 .search-button {
   background-color: #0065fc;
   color: white;
