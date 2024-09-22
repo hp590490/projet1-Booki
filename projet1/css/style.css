@@ -88,7 +88,7 @@ body {
   height: 49px;
   background-color: #ffffff;
   opacity: 1;
-  margin-top: 30px;
+  margin-top: 35px;
   border: 1px solid#f2f2f2;
 }
 
@@ -132,16 +132,14 @@ body {
   text-align: center;
 }
 .filters-bar {
-  max-width: 758px;
-  height: 50px;
-  gap: 15px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 15px;
   margin-top: 35px;
   margin-bottom: 20px;
+  height: 50px;
 }
-.filters-bar p {
+.filters-bar span {
   font-weight: 700;
   font-size: 18px;
   color: #000000;
@@ -149,16 +147,20 @@ body {
 .filter {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
   border-radius: 25px;
   border: 2px solid #d9d9d9;
-  padding: 0px 19px 0px 19px;
+  padding: 12px 19px 12px 19px;
   gap: 10px;
 }
-.filter p {
+.filter span {
   font-weight: 700;
   font-size: 17px;
   color: #000000;
+}
+.filter:hover {
+  background-color: #deebff;
+  cursor: pointer;
+  transition: 0.4s;
 }
 
 a {
