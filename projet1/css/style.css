@@ -277,7 +277,8 @@ a {
 #hebergements .card-rating {
   margin-top: 2px;
 }
-#hebergements h2 {
+
+#hebergements h4 {
   font-size: 18px;
   font-weight: 700;
   margin: 30px 0 0 0;
@@ -289,7 +290,6 @@ a {
   height: 108%;
 }
 .more a {
-  display: block;
   width: 22px;
 }
 
