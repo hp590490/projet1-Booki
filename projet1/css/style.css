@@ -238,26 +238,30 @@ a {
   font-weight: 700;
   font-size: 22px;
 }
-.hebergements-cards .row1 {
+.hebergements-cards .row{
   display: flex;
-  gap: 30px;
+  flex-wrap: wrap; /* Permet aux cartes de passer sur une nouvelle ligne si nécessaire */
+  justify-content: space-around; /* Distribue les cartes avec un espace régulier entre elles */
+  max-width: 1200px;
+  margin: 0 auto;
 }
-.hebergements-cards .row2 {
-  display: flex;
-  gap: 30px;
 }
 .hebergements-cards .card {
-  gap: 4px;
-  width: 250px;
-  padding: 0 0 15px 0;
-  margin-top: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 10px;
+  flex: 1 1 calc(33.333% - 20px); /* Assure qu'il y a trois cartes par ligne */
+  max-width: calc(33.333% - 20px); /* Limite la largeur des cartes */
+  min-width: 250px; /* Définit une largeur minimale pour éviter que les cartes deviennent trop petites */
+  transition: transform 0.3s;
   box-shadow: 0px 3px 15px 0px #0000001a;
 }
 .hebergements-cards img {
-  border-radius: 20px 20px 0 0;
-  border: 5px solid #ffffff;
-  height: 124px;
-  width: 96%;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 .hebergements-cards .card-content {
   padding: 0 15px 0 15px;
