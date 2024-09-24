@@ -275,9 +275,13 @@ a {
   width: max-content;
   cursor: pointer;
 }
+
 .more a {
   display: block;
   width: 22px;
+}
+.row1 a {
+  height: ;
 }
 /****** Populaires ***********/
 .populaires {
