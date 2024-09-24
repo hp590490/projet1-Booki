@@ -35,50 +35,57 @@ a {
 .info-group {
   max-height: 281px;
   gap: 35px;
-  width: 1340px;
 }
 .top-main {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
+}
+.left-part-header {
+  gap: 10px;
 }
 .left-part-header img {
-  height: 15px;
-  padding-top: 20px;
+  padding-top: 30px;
+  display: inline-block;
+  height: 19px;
 }
 .right-part-header {
+}
+.button {
   display: flex;
   justify-content: space-between;
-  align-items: start;
-  width: 200px;
+  align-items: center;
+  text-align: center;
+  gap: 68px;
+  height: 100%;
 }
-.right-part-header button {
-  margin-top: 4px;
+.right-part-header a {
   background: none;
   outline: none;
   border: none;
-  font-size: 0.8rem;
+  font-size: 16px;
+  font-weight: 400;
 }
-.right-part-header button:hover {
+.right-part-header a:hover {
   color: #0065fc;
   cursor: pointer;
 }
 
 .button1:hover:before {
   content: "";
-  width: 88px;
+  width: 110px;
   height: 1.5px;
   position: absolute;
   background: #0065fc;
-  transform: translateX(1%) translateY(-870%);
+  transform: translateX(1%) translateY(-1135%);
 }
 .button2:hover:before {
   content: "";
-  width: 49px;
+  width: 61px;
   height: 1.5px;
   position: absolute;
   background: #0065fc;
-  transform: translateX(1%) translateY(-870%);
+  transform: translateX(1%) translateY(-1135%);
 }
 
 .search-bar {
@@ -192,6 +199,7 @@ a {
   border-radius: 20px;
   padding: 5px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  object-fit: ;
 }
 
 .card img {
