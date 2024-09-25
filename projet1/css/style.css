@@ -252,32 +252,35 @@ a {
 }
 .hebergements-cards .card {
   gap: 4px;
-  padding: 0 0 15px 0;
+  padding: 0px 0px 15px 0px;
   margin-top: 30px;
   box-shadow: 0px 3px 15px 0px #0000001a;
 }
 .hebergements-cards img {
   border-radius: 20px 20px 0 0;
-  border: 5px solid #ffffff;
   height: 124px;
-  width: 96%;
+  width: 100%;
 }
 .hebergements-cards .card-content {
-  padding: 0 15px 0 15px;
+  padding: 0 10px 0 10px;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
 }
 #hebergements .card-title {
   margin: 0;
+  padding: 5px 0 7px 0;
 }
 #hebergements .card-subtile {
   margin: 0;
 }
 #hebergements .card-rating {
-  margin-top: 2px;
+  padding-top: 4px;
 }
-
+.card .link-card {
+  display: inline-block;
+  padding: 5px 5px 0px 5px;
+}
 #hebergements h4 {
   font-size: 18px;
   font-weight: 700;
@@ -343,15 +346,15 @@ a {
   gap: 30px;
 }
 .cards-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 30px;
-  align-items: center;
-  max-width: 1280px;
+  padding-top: 10px;
 }
 .card-activité {
   box-shadow: 0px 3px 15px 0px #0000001a;
   height: 439px;
-  width: 297px;
+  width: 100%;
   border-radius: 20px;
 }
 
@@ -370,8 +373,7 @@ a {
 .bot {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  width: 100%;
-  width: 1340px;
+  width: 93%;
   margin: 0 50px;
   box-sizing: border-box;
   margin-top: 30px;
