@@ -465,12 +465,48 @@ a {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
   .main-container {
-    padding: 0 10px 0 10px;
+    padding: 0;
   }
   .top-main {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .right-part-header {
+    padding: 30px 0 0px 0;
+    width: 100%;
+  }
+  .right-part-header .button {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+  }
+  .right-part-header .button1 {
+    width: 50%;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #f2f2f2;
+  }
+  .right-part-header .button1:hover {
+    color: #0065fc;
+    border-bottom: 2px solid #0065fc;
+  }
+  .right-part-header .button1:hover:before {
+    display: none;
+  }
+  .right-part-header .button2 {
+    padding-bottom: 15px;
+    width: 50%;
+    border-bottom: 2px solid #f2f2f2;
+  }
+  .right-part-header .button2:hover {
+    color: #0065fc;
+    border-bottom: 2px solid #0065fc;
+  }
+  .right-part-header .button2:hover:before {
+    display: none;
+  }
+  .info-group {
+    padding: 0px 10px 0 10px;
   }
   .headline p {
     white-space: nowrap;
@@ -503,31 +539,74 @@ a {
   .filter {
     font-size: 10px;
   }
-  .infobar {
-    padding-top: 60px;
+  .filter span {
+    font-size: 0.85rem;
+    white-space: nowrap;
   }
-  /* Mettre section populaires avant hébergements */
+  .infobar {
+    padding: 60px 10px 0 10px;
+    font-size: 0.9rem;
+  }
+  .hebergements-and-populaires {
+    margin-top: 0;
+  }
   #hebergements {
     order: 2;
     border-radius: 0 !important;
     background-color: #ffffff;
   }
+  #hebergements span:first-child {
+    font-size: 1.3rem;
+    white-space: nowrap;
+  }
   .populaires {
-    max-width: 100%;
+    width: 100%;
     margin-bottom: 10px;
     border-radius: 0 !important;
+    margin-bottom: 15px;
   }
-
+  .populaires-title h2 {
+    font-size: 1.3rem;
+  }
+  .populaires-cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .populaires-cards a {
+    width: 100%;
+  }
+  .row1 {
+    display: flex !important;
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+  .row2 {
+    display: flex !important;
+    flex-direction: column;
+  }
+  #activités .cards-container {
+    display: flex;
+    flex-direction: column;
+  }
+  #activités .card-activité {
+    height: 200px;
+  }
+  #activités .card-activité img {
+    height: 150px;
+  }
+  #activités h2 {
+    font-size: 1.3rem;
+  }
   .bot {
     display: flex;
     flex-direction: column;
     margin: 0;
-    width: auto;
+    max-width: 100%;
   }
   .list-footer {
     background-color: #f2f2f2;
   }
   .list-footer:last-child {
-    padding-bottom: 30px;
+    padding-top: 0;
   }
 }
