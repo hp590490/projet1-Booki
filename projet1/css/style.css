@@ -12,7 +12,7 @@
 .fa-solid {
   color: var(--main-color);
 }
-
+/* Affecter les éléments généraux au body */
 body {
   display: flex;
   justify-content: center;
@@ -32,10 +32,9 @@ a {
   padding: 0 50px;
   box-sizing: border-box;
 }
-.info-group {
-  max-height: 281px;
-  gap: 35px;
-}
+
+/* HEADER */
+
 .top-main {
   display: flex;
   justify-content: space-between;
@@ -70,6 +69,8 @@ a {
   cursor: pointer;
 }
 
+/* POUR CREER LES BARRES BLEUES AU-DESSUS EN HOVER */
+
 .button1:hover:before {
   content: "";
   width: 110px;
@@ -86,6 +87,12 @@ a {
   background: #0065fc;
   transform: translateX(1%) translateY(-1150%);
 }
+.info-group {
+  max-height: 281px;
+  gap: 35px;
+}
+
+/* FORMULAIRE BARRE DE RECHERCHE */
 
 .search-bar {
   display: flex;
@@ -140,6 +147,9 @@ a {
   font-weight: 700;
   text-align: center;
 }
+
+/* FILTRES */
+
 .filters-bar {
   display: flex;
   align-items: center;
@@ -178,6 +188,9 @@ a {
   align-items: center;
   margin-top: 35px;
 }
+
+/* INFOBAR */
+
 .infobar i {
   border: 1px solid #d9d9d9;
   color: #0065fc;
@@ -189,6 +202,29 @@ a {
   justify-content: center;
 }
 
+/****** Hebergements And Populaires ***********/
+.hebergements-and-populaires {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 35px;
+}
+
+.hebergements-and-populaires section {
+  background-color: var(--main-bg-color);
+  border-radius: 20px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+/****** Hebergements ***********/
+
+#hebergements {
+  width: 65%;
+}
+#hebergements > span {
+  font-weight: 700;
+  font-size: 22px;
+}
 .section-title {
   margin: 0;
   font-size: 22px;
@@ -217,28 +253,6 @@ a {
   color: var(--main-bg-color);
 }
 
-/****** Hebergements And Populaires ***********/
-.hebergements-and-populaires {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 35px;
-}
-
-.hebergements-and-populaires section {
-  background-color: var(--main-bg-color);
-  border-radius: 20px;
-  padding: 30px;
-  box-sizing: border-box;
-}
-
-/****** Hebergements ***********/
-#hebergements {
-  width: 65%;
-}
-#hebergements > span {
-  font-weight: 700;
-  font-size: 22px;
-}
 .hebergements-cards .row1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -342,6 +356,8 @@ a {
   margin-bottom: 5px;
 }
 
+/* ACTIVITES */
+
 #activités {
   padding: 30px;
   gap: 30px;
@@ -371,6 +387,8 @@ a {
   width: 100%;
   object-fit: cover;
 }
+
+/* FOOTER */
 
 .bot {
   display: grid;
