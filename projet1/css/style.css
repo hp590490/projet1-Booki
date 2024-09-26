@@ -555,7 +555,7 @@ a {
     border-radius: 0 !important;
     background-color: #ffffff;
   }
-  #hebergements span:first-child {
+  #hebergements > span {
     font-size: 1.3rem;
     white-space: nowrap;
   }
