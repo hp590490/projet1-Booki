@@ -26,7 +26,7 @@ a {
   text-decoration: none;
 }
 
-.main-container {
+.container {
   width: 100%;
   max-width: 1440px;
   padding: 0 50px;
@@ -464,7 +464,7 @@ a {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-  .main-container {
+  .container {
     padding: 0;
   }
   .top-main {
