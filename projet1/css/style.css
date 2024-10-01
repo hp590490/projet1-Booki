@@ -257,7 +257,6 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
-  position: relative;
 }
 
 .hebergements-cards .row2 {
