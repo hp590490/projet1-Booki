@@ -111,7 +111,6 @@ a {
 .location-icon {
   width: 50px;
   height: 49px;
-  text-align: center;
   background-color: #f2f2f2;
   border-radius: 15px 0px 0px 15px;
   display: flex;
@@ -419,7 +418,7 @@ a {
   font-size: 16px;
   line-height: 2;
 }
-#loupe {
+.loupe {
   display: none;
 }
 .filtres {
@@ -530,22 +529,31 @@ a {
   }
   .search-bar {
     margin: 0 auto;
+    border-right: 0;
   }
   .search-button {
     display: none;
   }
-  #loupe {
-    display: block;
-    background-color: #0065fc;
-    color: white;
-    border: 1px;
-    border-radius: 15px 15px 15px 15px;
-    padding: 15px 16px 15px 16px;
+  .loupe {
+    border: 0;
+    border-radius: 0;
+    padding: 0;
     cursor: pointer;
     font-size: 18px;
     font-weight: 700;
-    text-align: center;
+    background-color: #0065fc;
+    border-radius: 15px 15px 15px 15px;
     box-shadow: 0px 4px 4px 0px #00000040;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #loupe {
+    color: white;
+    border-radius: 15px 15px 15px 15px;
+    padding: 17px 17px 16px 17px;
+    font-size: 18px;
+    font-weight: 700;
   }
 
   .filters-bar {
